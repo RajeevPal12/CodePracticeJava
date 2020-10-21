@@ -1,0 +1,77 @@
+
+public class ProgramToCheckNextingOfParenthesis {
+static int MAX=100;
+	static int top;
+	static int[] stack;
+	static void initializestack(){
+		top=-1;
+		stack=new int[MAX];
+		for(int i=0;i<MAX;i++)
+			stack[i]=0;
+	}
+	static void push(int val){
+		if(top==MAX){
+			System.out.println("stack is ovrflow!");
+			return;
+		}
+		top+=1;
+		stack[top]=val;
+	}
+	static int pop(){
+		if(top==-1){
+			System.out.println("stack is underflow!");
+			return -1;
+		}
+		int val=stack[top];
+		top-=1;
+		return val;
+	}
+	static boolean isEmpty(){
+		if(top==-1)
+			return true;
+		else
+			return false;
+	}
+	public static void checkNextingOfParenthesis(String s){
+		initializestack();
+		int temp;char ch='\0';
+		if(s==null)
+			return ;
+		for(int i=0;i<s.length();i++){
+			try{
+				ch=s.charAt(i);
+			}
+			catch(NullPointerException e){System.out.println("string is empty:");e.printStackTrace();}
+			if(ch=='('||ch=='{'||ch=='[')
+				push((int)ch);
+			else if(ch==')'||ch=='}'||ch==']'){
+				
+				if(top==-1){
+					System.out.println("Right Paranthesis is more then left paranthesis!");
+					return;
+				}
+				else{
+					temp=pop();
+					if(temp!=(int)ch){
+						System.out.println("Mish Match Paranthesis Found!");
+						System.out.println((char)temp+" "+ch);
+					}
+				}
+			}
+		}
+		if(top==-1){
+			System.out.println("Balanced Paranthesis!");
+			return ;
+		}
+		else{
+			System.out.println("Left Paranthesis more then right Paranthesis!");
+			return ;
+		}
+	}
+	public static void main(String[] args) {
+		String str="[C+{A/(B-C)*D}%B]";
+		checkNextingOfParenthesis(str);
+		
+		
+	}
+}

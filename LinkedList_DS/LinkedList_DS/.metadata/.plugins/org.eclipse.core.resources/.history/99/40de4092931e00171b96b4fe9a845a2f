@@ -1,0 +1,78 @@
+package com.trie.practice;
+
+import java.util.Iterator;
+import java.util.Vector;
+
+public class TrieInsertAndSearch {
+
+	static class Node{
+		Vector<Node> child;
+		boolean isleaf;
+		Node(){
+			child=new Vector<>();
+		}
+	}
+	public static void printTrie(Node root,String result){
+		if(root.isleaf==true){
+			System.out.print(result);
+			return;
+		}
+		for(int i=0;i<=26;i++){
+			if(root.child.get(i)!=null){
+				printTrie(root,result+((char)(i+'a'))+"");
+			}
+		}
+		
+	}
+	public static void insert(Node node,char[] arr){
+		
+		int i=0,arrlen=arr.length-1;
+		int ch=0;
+		Node ptr=node;
+		while(i<=arrlen){
+			ch=arr[i]-'a';
+			ptr=ptr.child.get(ch);
+			if(ptr==null)
+				break;
+			i++;
+		}
+		if(i>arrlen){
+			ptr.isleaf=true;
+			return;
+		}
+		else{
+			Node temp=null;
+			while(i<=arrlen){
+				temp=new Node();
+				ptr.child.add(ch,temp);
+				ptr=temp;
+				i++;
+				ch=arr[i]-'a';
+			}
+			if(temp!=null)
+				temp.isleaf=true;
+		}
+	}
+	public static void main(String[] args) {
+		
+		 // Input keys (use only 'a' through 'z' and lower case)
+	    String keys[] = {"the", "a", "there", "answer", "any",
+	                     "by", "bye", "their"};
+	 
+	    Node root = new Node();
+	    // Construct trie
+	    for (int i = 0; i < keys.length; i++)
+	        insert(root, keys[i].toCharArray());
+	    
+	    
+	 /*
+	    // Search for different keys
+	    System.out.println("  the:"+search(root, "the".toCharArray()) );
+	    System.out.println("  these:"+ search(root, "these".toCharArray()) );
+	    System.out.println("  their:"+ search(root, "their".toCharArray()) );
+	    System.out.println("  thaw:"+ search(root, "thaw".toCharArray()));
+	    deleteNodes(root,"the".toCharArray());
+	    System.out.println("  the:"+search(root, "the".toCharArray()) );
+	    */
+	}
+}

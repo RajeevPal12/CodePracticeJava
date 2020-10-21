@@ -1,0 +1,9 @@
+
+public class ProgramToCheckNextingOfParenthesis {
+
+	public static void main(String[] args) {
+		String str="[C+{A/(B-C)*D}%B]";
+		
+		
+	}
+}

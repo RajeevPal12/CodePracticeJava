@@ -1,0 +1,86 @@
+
+public class InFixExpressionToPostFix {
+	
+	static int MAX=100;
+	static int top;
+	static char[] stack;
+	static void initializestack(){
+		top=-1;
+		stack=new char[MAX];
+		for(int i=0;i<MAX;i++)
+			stack[i]=0;
+	}
+	static void push(char val){
+		if(top==MAX){
+			System.out.println("stack is ovrflow!");
+			return;
+		}
+		top+=1;
+		stack[top]=val;
+	}
+	static char pop(){
+		if(top==-1){
+			System.out.println("stack is underflow!");
+			return '\0';
+		}
+		char val=stack[top];
+		top-=1;
+		return val;
+	}
+	static boolean isEmpty(){
+		if(top==-1)
+			return true;
+		else
+			return false;
+	}
+	public static int precidency(char symbol){
+		int val=-1;
+		switch(symbol){
+			
+			case '(':
+			case ')':val=0;
+			case '+':
+			case '-':val=1;
+			case '*':
+			case '/':
+			case '%':val=2;
+			case '^':val=3;
+			default: val=0;
+		}
+		return val;
+	}
+	public static void conversionInfixToPostFix(String str){
+		initializestack();
+		StringBuffer sb=new StringBuffer();
+		char ch='\0';
+		if(str==null)  return ;
+		int len=str.length();
+		for(int i=0;i<len;i++){
+			try{
+				ch=str.charAt(i);
+			}
+			catch(NullPointerException e){System.out.println("string is empty:");e.printStackTrace();}
+			if(ch=='(')
+				push(ch);
+			else if(ch==')'){
+				char c1=pop();
+				while(c1!='('){
+					sb.append(String.valueOf(c1));
+					c1=pop();
+				}
+			}
+			else if(ch=='+'||ch=='-'||ch=='*'||ch=='/'||ch=='%'||ch=='^'){
+				
+			}
+			else{
+				sb.append(String.valueOf(ch));
+			}
+		}
+	}
+	public static void main(String[] args) {
+		
+		String s="A-B^C+D*E/(F+G)";
+		
+		
+	}
+}

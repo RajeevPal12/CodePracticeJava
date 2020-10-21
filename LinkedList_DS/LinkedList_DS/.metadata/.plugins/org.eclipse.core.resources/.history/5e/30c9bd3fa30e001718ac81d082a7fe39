@@ -1,0 +1,15 @@
+
+public class InFixExpressionToPostFix {
+
+	public static void conversionInfixToPostFix(){
+		
+		
+		
+	}
+	public static void main(String[] args) {
+		
+		String s="A-B^C+D*E/(F+G)";
+		
+		
+	}
+}

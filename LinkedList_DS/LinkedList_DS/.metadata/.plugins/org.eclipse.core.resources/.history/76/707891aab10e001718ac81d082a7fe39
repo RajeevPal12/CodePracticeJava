@@ -1,0 +1,7 @@
+
+public class EvaluationOfPostfixExpression {
+
+	public static void main(String[] args) {
+		String s="7532^*922^-/+64*+";
+	}
+}

@@ -1,0 +1,46 @@
+
+public class InFixExpressionToPostFix {
+	
+	static int MAX=100;
+	static int top;
+	static char[] stack;
+	static void initializestack(){
+		top=-1;
+		stack=new char[MAX];
+		for(int i=0;i<MAX;i++)
+			stack[i]=0;
+	}
+	static void push(char val){
+		if(top==MAX){
+			System.out.println("stack is ovrflow!");
+			return;
+		}
+		top+=1;
+		stack[top]=val;
+	}
+	static char pop(){
+		if(top==-1){
+			System.out.println("stack is underflow!");
+			return '\0';
+		}
+		char val=stack[top];
+		top-=1;
+		return val;
+	}
+	static boolean isEmpty(){
+		if(top==-1)
+			return true;
+		else
+			return false;
+	}
+	
+	public static void conversionInfixToPostFix(String str){
+		
+	}
+	public static void main(String[] args) {
+		
+		String s="A-B^C+D*E/(F+G)";
+		
+		
+	}
+}

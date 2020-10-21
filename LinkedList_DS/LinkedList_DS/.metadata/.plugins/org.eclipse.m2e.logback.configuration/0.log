@@ -1,0 +1,25 @@
+2017-03-24 19:01:56,870 [Worker-15] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-03-24 19:01:56,900 [Worker-15] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2017-04-07 07:46:34,003 [main] WARN  o.e.r.i.c.rcp.TypeBindingAnalyzer - Can't handle class org.eclipse.jdt.internal.compiler.ast.IfStatement as parent of completion location.
+2017-04-13 21:11:51,266 [main] WARN  o.e.r.i.c.rcp.TypeBindingAnalyzer - Can't handle class org.eclipse.jdt.internal.compiler.ast.UnaryExpression as parent of completion location.
+2017-04-15 13:56:30,261 [main] WARN  o.e.r.i.c.rcp.TypeBindingAnalyzer - Can't handle class org.eclipse.jdt.internal.compiler.ast.BinaryExpression as parent of completion location.
+2017-07-06 23:02:01,653 [Worker-18] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.myapp.resource:my-app:1.0-SNAPSHOT @ E:\maven\my-app\pom.xml.
+2017-07-06 23:02:03,592 [Worker-18] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /my-app/src/main/java
+2017-07-06 23:02:03,594 [Worker-18] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /my-app/src/test/java
+2017-07-06 23:02:04,202 [Worker-18] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 16 sec
+2017-07-06 23:02:20,408 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-06 23:02:20,417 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\maven\my-app\src\main\resources
+2017-07-06 23:02:20,420 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-06 23:02:20,426 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\maven\my-app\src\test\resources
+2017-08-04 01:30:03,652 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-04 01:30:03,780 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\maven\my-app\src\main\resources
+2017-08-04 01:30:03,786 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-04 01:30:03,831 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\maven\my-app\src\test\resources
+2018-01-01 12:50:39,737 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-01-01 12:50:39,758 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\maven\my-app\src\main\resources
+2018-01-01 12:50:39,763 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-01-01 12:50:39,770 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\maven\my-app\src\test\resources
+2018-04-12 23:26:56,816 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-04-12 23:26:56,845 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\maven\my-app\src\main\resources
+2018-04-12 23:26:56,850 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-04-12 23:26:56,858 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\maven\my-app\src\test\resources

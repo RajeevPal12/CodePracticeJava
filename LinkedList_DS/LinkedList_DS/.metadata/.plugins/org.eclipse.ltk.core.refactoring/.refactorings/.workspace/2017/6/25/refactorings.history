@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SearchAnElementInASortedAndRotatedArray&apos; to &apos;MicrosoftPrograms&apos;" description="Rename resource &apos;SearchAnElementInASortedAndRotatedArray&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/SearchAnElementInASortedAndRotatedArray" name="MicrosoftPrograms" stamp="1498093925614" updateReferences="true"/>
+</session>
